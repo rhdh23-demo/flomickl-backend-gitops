@@ -1,0 +1,15 @@
+app:
+  name: flomickl-poi-backend-app
+  namespace: flomickl
+  cluster: .apps.rosa-pzz6v.9nln.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/rhdh23-demo/flomickl-backend
+  org: rhdh23-demo
+  name: flomickl-backend
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: flomickl/poi-backend-app
+  tag: latest
